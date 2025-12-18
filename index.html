@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./output.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Home</title>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
-    <body>
-        <h1 class="text-3xl">hello world</h1>
+
+<body class="font-sans">
+
+    
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <h1 class="text-2xl font-bold text-red-600">Foodie</h1>
+            <nav class="space-x-6 hidden md:block">
+                <a href="#" class="hover:text-red-600">Home</a>
+                <a href="#" class="hover:text-red-600">Menu</a>
+                <a href="#" class="hover:text-red-600">About</a>
+                <a href="#" class="hover:text-red-600">Contact</a>
+            </nav>
+            <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                Order Now
+            </button>
+        </div>
+    </header>
+
+    
+    <section class="bg-gray-100">
+        <div class="container mx-auto flex flex-col md:flex-row items-center px-5 py-20">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold mb-4">
+                    Delicious Food, <span class="text-red-600">Delivered Fast</span>
+                </h2>
+                <p class="text-gray-600 mb-6">
+                    Experience the taste of fresh, handcrafted meals made with love.
+                </p>
+                <button class="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700">
+                    View Menu
+                </button>
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0">
+                <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg"
+                    class="rounded-lg shadow-lg w-full h-72 object-cover" alt="Restaurant Food">
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="container mx-auto px-5 py-20 text-center">
+        <h3 class="text-3xl font-bold mb-4">About Us</h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            We serve high-quality food using the freshest ingredients. Our chefs are passionate about delivering
+            unforgettable flavors.
+        </p>
+    </section>
+
+   
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto px-5">
+            <h3 class="text-3xl font-bold text-center mb-10">Popular Dishes</h3>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+             
+                <div class="bg-white p-6 rounded shadow text-center">
+                    <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg"
+                        class="rounded mb-4 w-full h-48 object-cover" alt="Pizza">
+                    <h4 class="font-bold text-xl">Pizza</h4>
+                    <p class="text-gray-600">$12.99</p>
+                </div>
+
+                
+                <div class="bg-white p-6 rounded shadow text-center">
+                    <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
+                        class="rounded mb-4 w-full h-48 object-cover" alt="Burger">
+                    <h4 class="font-bold text-xl">Burger</h4>
+                    <p class="text-gray-600">$9.99</p>
+                </div>
+
+                <div class="bg-white p-6 rounded shadow text-center">
+                    <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg"
+                        class="rounded mb-4 w-full h-48 object-cover" alt="Pasta">
+                    <h4 class="font-bold text-xl">Pasta</h4>
+                    <p class="text-gray-600">$11.49</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-red-600 text-white text-center py-16">
+        <h3 class="text-3xl font-bold mb-4">Ready to Order?</h3>
+        <p class="mb-6">Get your favorite meal delivered to your doorstep.</p>
+        <button class="bg-white text-red-600 px-6 py-3 rounded font-semibold hover:bg-gray-200">
+            Order Now
+        </button>
+    </section>
+
+    
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="container mx-auto px-5 text-center">
+            <h4 class="text-xl font-bold mb-3">Foodie Restaurant</h4>
+            <p class="mb-4">© 2025 All Rights Reserved</p>
+            <div class="space-x-4 text-xl">
+                <i class="fab fa-facebook hover:text-white"></i>
+                <i class="fab fa-instagram hover:text-white"></i>
+                <i class="fab fa-twitter hover:text-white"></i>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
